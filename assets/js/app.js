@@ -43,7 +43,9 @@ var minislide = (function(){
         }
     }
     
-    function render(container) {
+    function render($container) {
+		$container.html('');
+		
         $.each(numbers, function(i, e){
             if (e > 0) // No piece for 0
             {        
@@ -55,14 +57,14 @@ var minislide = (function(){
                         top:~~(i / number_of_rows) * piece_size, 
                         left:(i % number_of_rows) * piece_size
                     })
-                   .appendTo(container);
+                   .appendTo($container);
             }
         });
     }
     
-    function init(container){
+    function init($container){
         shuffle();
-        render(container);
+        render($container);
     }
 
     return {
