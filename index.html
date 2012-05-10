@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width" />
+		<title>MiniSlide</title>
+		<link rel="stylesheet" href="assets/css/master.css" type="text/css" media="screen" />
+		
+		<script src="phonegap.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="assets/js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="assets/js/app.js" type="text/javascript" charset="utf-8"></script>
+		
+	</head>
+	<body>
+ 		<header>MiniSlide</header>
+		<div id="game-board">
+
+		</div>
+		
+		<script type="text/javascript">
+			document.addEventListener('deviceready', function(){
+				minislider.init($('#game-board'));
+			});
+		</script>
+	</body>
+</html>

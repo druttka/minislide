@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns		= "http://www.w3.org/ns/widgets"
+	xmlns:gap	= "http://phonegap.com/ns/1.0"
+	id		= "com.davidruttka.minislide"
+	version 	= "1.0.0">
+
+	<name>MiniSlide</name>
+
+	<description>
+		Sliding puzzle game for mobile devices built with PhoneGap
+	</description>
+
+	<author href="http://davidruttka.com"
+		email="david@davidruttka.com">
+		David Ruttka
+	</author>
+
+	<icon src="icon.png" gap:role="default" />
+
+	<preference name="orientation" value="portrait" />
+</widget>
