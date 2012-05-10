@@ -53,9 +53,9 @@ var minislide = (function(){
                     .data('number', e)
                     .addClass('piece')
                     .html(e)
-                    .offset({
-                        top:~~(i / number_of_rows) * piece_size, 
-                        left:(i % number_of_rows) * piece_size
+                    .css({
+                        top:(~~(i / number_of_rows) * piece_size) + "px", 
+                        left:((i % number_of_rows) * piece_size)  + "px"
                     })
                    .appendTo($container);
             }
