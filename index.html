@@ -18,9 +18,19 @@
 
 		</div>
 		
+		<div class="options">
+			<button class="image-toggle" data-url="assets/img/smileyface.jpg">Use smiley face</button>
+			<button class="image-toggle" data-url="assets/img/board.png">Use numbers</button>
+		</div>
+		
 		<script type="text/javascript">
 			document.addEventListener('deviceready', function(){
 				minislide.init($('#game-board'));
+			});
+			
+			$('.image-toggle').click(function(e){
+				minislide.updateImage($(e.currentTarget).data('url'));
+				return false;			
 			});
 		</script>
 	</body>
