@@ -78,7 +78,7 @@ var minislide = (function(){
 		$('.piece')
 			.css({
 				'background-image': 'url(' + imgSrc + ')',
-				'background-size': '200px 200px' // TODO: Normalize the size
+				'background-size': '192px 192px' // TODO: Normalize the size
 			});
 			
 		var emptyChild = numbers.indexOf(0) + 1; // +1 because of nth-child being 1 based
@@ -97,6 +97,7 @@ var minislide = (function(){
     }
 
     return {
-        init: init
+        init: init,
+		updateImage:updateImage
     };
 })();

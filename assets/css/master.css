@@ -16,6 +16,27 @@ header{
     margin-right:auto;
     margin-left:auto;
 }
+.options{
+	margin-top:10px;
+	text-align:center;
+}
+button{
+	height:32px;
+	
+	background: -webkit-linear-gradient(top, #ccc 10%, white);
+	background: -moz-linear-gradient(top, #ccc 10%, white);
+	background: -o-linear-gradient(top, #ccc 10%, white);
+	background: -ms-linear-gradient(top, #ccc 10%, white);
+	background: linear-gradient(top,#ccc 10%, white);
+	
+	font-weight:bold;
+	
+	border-color:#ccc;
+	
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
 .piece
 {
 	background-image:url('../img/board.png');
