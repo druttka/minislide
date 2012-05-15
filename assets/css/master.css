@@ -1,6 +1,4 @@
 body{
-    width:320px;
-    height:480px;
     background-color:black;
     color:white;
 }
@@ -17,16 +15,16 @@ header{
     height:200px;
     margin-right:auto;
     margin-left:auto;
-    position:relative;
 }
 .piece
 {
-    position:absolute;
+	background-image:url('../img/board.png');
+	background-color:black;
+	float:left;
     width:48px;
     height:48px;
     
     border:1px solid red;
-    background-color:black;
     
     text-align:center;
     -webkit-touch-callout: none;
